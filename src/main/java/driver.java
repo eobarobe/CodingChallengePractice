@@ -6,6 +6,18 @@ public class driver {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
 
+        TreeNode root = new TreeNode(1);
+        TreeNode c1 = new TreeNode(2);
+        TreeNode c2 = new TreeNode(3);
+        root.left = c1;
+        root.right = c2;
+        TreeNode c3 = new TreeNode(4);
+        TreeNode c4 = new TreeNode(5);
+        c1.left = c3;
+        c3.right = c4;
+
+        LevelOrderTraversal.LOTraversal(root);
+
         // Write an answer using System.out.println()
         // To debug: System.e
 
